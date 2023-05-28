@@ -1,50 +1,55 @@
-.container{
-    display: grid;
-    grid-template-columns: 6fr 2fr;
-    grid-template-rows: 8fr 2fr;
-    grid-row-gap: 50%;
-    grid-column-gap: 20px;
+.box-for-selection, .box-for-statistics{
+    float: left;
+    box-sizing: border-box;
+    padding: 15px;
 }
 
 .box-for-selection{
     background-color: lightblue;
+    border: 2px solid black;
     display: inline-block;
     position: relative;
-    left: 20px;
+    margin: left;
+    left: 13px;
+    right: 13px;
     height: 200px;
-    width: 95%;
+    width: 55%;
     padding: 10px;
     border-radius: 5px;
+    margin-right: 3%;
 }
 
 .box-for-statistics{
     background-color: lightblue;
+    border: 2px solid black;
     display: inline-block;
     position: relative;
-    right: 20px;
-    left: 20px;
+    margin: right;
+    right: 13px;
+    left: 13px;
     height: 200px;
-    width: 95%;
+    width: 35%;
     padding: 10px;
     border-radius: 5px;
+    margin-left: 3%;
 }
 
 .badge{
-    background-color: purple;
-    display: inline-block;
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    width: 50px;
-    height: 30px;
-    border-radius: 5px;
-    padding: 10px;
+  background-color: purple;
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-@media(max-width: 500px){
-    .container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 9fr;
-        grid-row-gap: 5px;
+@media screen and (max-width: 500px){
+    .box-for-selection, .box-for-statistics{
+      float: none;
+      width: 100%;
+      margin: 0px;
     }
 }
