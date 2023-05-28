@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик покупок</title>
+</head>
+<body>
+
+<!-- Клас лівої панелі -->
+<div class="box-for-selection">
+    <div class="search">
+        <input type="text" placeholder="Назва товару" id="search_bar">
+        <button id="add_button" data-tooltip="Додати товар">Додати</button>
+    </div>
+<div class="products">
+    <section class="tomatoes">
+        <span class="left-border" id="tomatoes">Помідори</span>
+
+        <div class="center">
+            <span class="number">2</span>
+        </div>
+
+        <div class="right">
+            <button class="bought" data-tooltip="Товар придбано">Не куплено</button>
+        </div>
+    </section>
+
+    <section class="cookies">
+        <span class="left-corner">Печиво</span>
+
+        <div class="center">
+            <button class="reduce" data-tooltip="Зменшити кількість товару">-</button>
+            <span class="number">2</span>
+            <button class="add" data-tooltip="Збільшити кількість товару ">+</button>
+        </div>
+
+        <div class="right">
+            <button class="bought" data-tooltip="Товар знаходиться в категорії 'Залишилося'">Куплено</button>
+            <button class="cancel" data-tooltip="Видалити товар">x</button>
+        </div>
+    </section>
+
+    <section class="cheese">
+        <input type="text" class="left" placeholder="Сир">
+        <div class="center">
+            <button class="reduce" data-tooltip="Зменшити кількість товару">-</button>
+            <span class="number">1</span>
+            <button class="add" data-tooltip="Збільшити кількість товару ">+</button>
+        </div>
+
+        <div class="right">
+            <button class="bought" data-tooltip="Товар знаходиться в категорії 'Залишилося'">Куплено</button>
+            <button class="cancel" data-tooltip="Видалити товар">x</button>
+        </div>
+    </section>
+    </div>
+</div>
+
+<!-- Клас правої панелі-->
+
+<div class="box-for-statistics">
+    <section id="title">Залишилося</section>
+    <section class="products-left">
+        <span class="text-1">Печиво
+            <span class="number">2</span>
+        </span>
+        <span class="text-2">Сир
+            <span class="number">1</span>
+        </span>
+    </section>
+
+    <section id="bought-title">Куплено</section>
+    <section class="products-bought">
+        <span class="text">Помідори
+            <span class="number">2</span>
+        </span>
+    </section>
+</div>
+
+</body>
+<footer> <span class="badge"></span></footer>
+</html>
