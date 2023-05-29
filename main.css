@@ -4,46 +4,51 @@
     padding: 15px;
 }
 
-.box-for-selection{
-    background-color: lightblue;
-    border: 2px solid black;
-    display: inline-block;
-    position: relative;
-    margin: left;
-    left: 13px;
-    right: 13px;
-    height: 200px;
-    width: 55%;
-    padding: 10px;
-    border-radius: 5px;
-    margin-right: 3%;
-}
-
-.box-for-statistics{
-    background-color: lightblue;
-    border: 2px solid black;
-    display: inline-block;
-    position: relative;
-    margin: right;
-    right: 13px;
-    left: 13px;
-    height: 200px;
-    width: 35%;
-    padding: 10px;
-    border-radius: 5px;
-    margin-left: 3%;
-}
-
-.badge{
+#badge{
   background-color: purple;
-  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  counter-reset: white;
+  display: flex;
   position: fixed;
   bottom: 20px;
   left: 20px;
-  width: 50px;
+  width: 70px;
   height: 30px;
   border-radius: 5px;
   padding: 10px;
+}
+
+#badge-text{
+    color: white;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-family: Impact, Haettenschweiler, 'Arial', "Century Gothic", serif;
+}
+
+button {
+    position: relative;
+}
+
+button::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    transform: translateX(-50%);
+    background-color:blueviolet;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;  /* to prevent the text from breaking lines */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    pointer-events: none;  /* the tooltip should not interfere with clicks on the button */
+}
+
+button:hover::after {
+    visibility: visible;
+    opacity: 1;
 }
 
 @media screen and (max-width: 500px){
@@ -51,5 +56,6 @@
       float: none;
       width: 100%;
       margin: 0px;
+      margin-top: 10px;
     }
 }
