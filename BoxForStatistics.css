@@ -1,31 +1,27 @@
-.box-for-statistics{
-    background-color: white;
-    border: 2px solid gray;
-   /* display: inline-block;
-    position: relative;*/
-    height: 250px;
-    width: 35%;
-    padding: 10px;
-    border-radius: 5px;
-    margin-right: 3%;
+#box-for-statistics{
+    border-style: groove;
+    border-radius: 10px;
+    width: 37%;
+    height: 193px;
+    margin-left: 3%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#products-left-title, #bought-title, .products-left, .bought{
+#rest-title, #taken-title, .rest, .taken{
     border-top: solid lightgray 1px;
     padding: 10px;
 }
 
-#products-left-title, #bought-title{
+#rest-title, #taken-title{
     font-weight: bold;
 }
 
-.bought{
+.rest{
     display:flex;
     align-items:center;
 }
 
-.text{
+.index-text{
     position: relative;
     margin-right: 5px;
     text-align: left;
@@ -34,33 +30,15 @@
     border-radius: 10px;
 }
 
-.text-tomato{
-    text-decoration:line-through;
-    position: relative;
-    margin-right: 5px;
-    text-align: left;
-    background-color: lightgray;
-    padding: 6px;
-    border-radius: 10px;
-}
-
-.number-tomato{
-    text-decoration:line-through;
-    background-color: orange;
-    color: white;
-    padding: 3px;
-    border-radius: 14px;
-}
-
-.index-container{
+.index-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
 }
 
-.numbers{
+.index-num{
     background-color: orange;
     color: white;
     padding: 3px;
-    border-radius: 14px;
+    border-radius: 11px;
 }
