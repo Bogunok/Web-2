@@ -1,12 +1,3 @@
-@media screen and (max-width: 500px) {
-    #shopping_box, #basket_box {
-        float: none;
-        width: 100%;
-        margin: 0px;
-        margin-top: 20px;
-    }
-}
-
 #shopping_box, #basket_box{
     print-color-adjust:unset;
     float: left;
