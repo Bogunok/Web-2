@@ -1,14 +1,16 @@
-#box-for-statistics{
-    border-style: groove;
+#basket_box{
+    border-style: solid;
+    border-color: lightgrey;
     border-radius: 10px;
-    width: 37%;
-    height: 193px;
-    margin-left: 3%;
+    width: 38%;
+    margin-left: 2%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #rest-title, #taken-title, .rest, .taken{
-    border-top: solid lightgray 1px;
+    border-top-style: solid;
+    border-top-color: lightgray;
+    border-top-width: 2px;
     padding: 10px;
 }
 
@@ -21,7 +23,7 @@
     align-items:center;
 }
 
-.index-text{
+.left_product_name{
     position: relative;
     margin-right: 5px;
     text-align: left;
@@ -30,15 +32,15 @@
     border-radius: 10px;
 }
 
-.index-container {
+.container {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
 }
 
-.index-num{
-    background-color: orange;
+.left_product_number{
+    background-color: darkorange;
     color: white;
-    padding: 3px;
-    border-radius: 11px;
+    padding: 4px;
+    border-radius: 10px;
 }

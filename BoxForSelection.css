@@ -1,13 +1,14 @@
 
 
-#shop{
-    border-style: groove;
+#shopping_box{
+    border-style: solid;
+    border-color: lightgrey;
     border-radius: 10px;
-    width: 57%;
-    margin-right: 3%;
+    width: 58%;
+    margin-right: 2%;
 }
 
-.goods{
+.products{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -20,6 +21,7 @@
 
 #search_bar{
     width:75%;
+    color: black;
 }
 
 #add_button{
@@ -31,29 +33,26 @@
     background-color:cornflowerblue;
 }
 
-.input_div, .goods-panel {
+.input_field, .products_panel {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 7px;
 }
 
-.left, .center, .right {
+.product_type, .product_counter, .product_purchase {
     width: 33.33%;
     box-sizing: border-box;
 }
 
-.center{
+.product_counter,.product_purchase  {
     text-align: center;
 }
 
-/* .counter, .plus, .minus{
-    box-sizing: border-box;
-} */
 
 .plus{
-    background-color: rgb(46, 184, 46);
-    border-color: rgb(46, 184, 46);
+    background-color: green;
+    border-color: green;
     color: white;
     border-radius: 14px;
 }
@@ -69,26 +68,28 @@
     text-decoration:line-through;
 }
 
-.left {
+.product_type {
     text-align: left;
 }
 
-.right {
+.product_purchase {
     text-align: right;
 }
 
 .counter{
     background-color: lightgrey;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
-.goods-panel{
-    border-top: solid lightgray 2px;
+.products_panel{
+    border-top-style: solid;
+    border-top-color: lightgray;
+    border-top-width: 2px;
 }
-#cheese-minus-button{
-    background-color:rgb(255, 173, 153);
-    border-color: rgb(255, 173, 153);
+#pale_minus{
+    background-color:palevioletred;
+    border-color: palevioletred;
 }
 
 .bought{
@@ -97,8 +98,8 @@
 }
 
 .cancel{
-    background-color: rgb(194, 0, 0);
-    border-color: rgb(194, 0, 0);
-    color: rgb(255, 255, 255);
-    border-radius: 5px;
+    background-color: red;
+    border-color: red;
+    color: white;
+    border-radius: 4px;
 }
